@@ -15,7 +15,7 @@
 	"scripts": {
 		"dev": "run-pty % npm run elm:watch % npm run elm:build % npm run styles:watch",
 		"prebuild": "rimraf docs",
-		"build": "npx parcel build index.html --dist-dir docs",
+		"build": "npx parcel build index.html --public-url ./ --dist-dir docs",
 		"elm:init": "npx elm init && npx elm-watch init",
 		"elm:watch": "npx elm-watch hot",
 		"elm:build": "npx parcel index.html",
