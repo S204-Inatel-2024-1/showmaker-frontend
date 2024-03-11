@@ -1,0 +1,31 @@
+{
+	"name": "showmaker_frontend",
+	"version": "0.1.0",
+	"description": "Showmaker Frontend",
+	"author": "Álisson Morais",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/S204-Inatel-2024-1/showmaker_frontend"
+	},
+	"keywords": [
+		"Elm",
+		"FETin"
+	],
+	"main": "index.js",
+	"scripts": {
+		"dev": "run-pty % npm run elm:watch % npm run elm:build % npm run styles:watch",
+		"elm:init": "npx elm init && npx elm-watch init",
+		"elm:watch": "npx elm-watch hot",
+		"elm:build": "npx parcel index.html",
+		"styles:init": "npx tailwindcss init",
+		"styles:build": "npx tailwindcss -i ./input.css -o ./build/output.css",
+		"styles:watch": "npm run styles:build -- --watch"
+	},
+	"devDependencies": {
+		"elm-watch": "^1.1.2",
+		"parcel": "^2.12.0",
+		"run-pty": "^4.1.0",
+		"tailwindcss": "^3.4.1"
+	}
+}

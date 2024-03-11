@@ -1,0 +1,12 @@
+# Cache
+.parcel-cache
+
+# Build stuff
+dist
+build
+
+# Elm dependencies
+elm-stuff
+
+# Node dependencies
+node_modules
